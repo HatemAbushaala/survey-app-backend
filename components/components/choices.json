@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_components_choices",
+  "info": {
+    "name": "choices",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "answers",
+  "info": {
+    "name": "answers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "model": "questions"
+    },
+    "guest_id": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "string"
+    }
+  }
+}
