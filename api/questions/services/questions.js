@@ -4,7 +4,10 @@
  * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-services)
  * to customize this service
  */
-
+/* 
+  check tests
+  __tests__/questions/services/questions.test.js
+*/
 function groupAnswersByQuestion(arr) {
   const result = {};
   const key = "question_id";
