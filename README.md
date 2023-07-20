@@ -10,6 +10,7 @@ This project was bootstrapped with [Create Strapi App@3.6.10](https://docs-v3.st
 # Usage
 
 - run the app using $npm run develop
+- run $npm test to run unit tests
 
 Admin panel link [http://localhost:1337/admin]
 Api link [http://localhost:1337]
