@@ -27,10 +27,7 @@
     {
       "method": "POST",
       "path": "/answers",
-      "handler": "answers.create",
-      "config": {
-        "policies": []
-      }
+      "handler": "answers.create"
     },
     {
       "method": "PUT",
