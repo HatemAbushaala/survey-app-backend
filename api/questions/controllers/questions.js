@@ -23,6 +23,17 @@ const random = async (ctx) => {
 
   return { data: question, available: true };
 };
+
+const results = async () => {
+  // count questions answers
+  const result = await strapi.connections.default.raw(
+    `select questions.id question_id,answer,questions.question,count(*) count from answers join questions on questions.id = answers.question group by answerId order by count desc`
+  );
+  // group answers by question
+  const questions = strapi.services.questions.groupAnswersByQuestion(result);
+  return questions;
+};
 module.exports = {
   random,
+  results,
 };

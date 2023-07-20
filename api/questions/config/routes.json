@@ -7,6 +7,14 @@
     },
     {
       "method": "GET",
+      "path": "/survey-results",
+      "handler": "questions.results",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/questions",
       "handler": "questions.find",
       "config": {
